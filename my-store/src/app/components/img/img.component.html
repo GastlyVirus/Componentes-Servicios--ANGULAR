@@ -1,0 +1,4 @@
+<img class="img-component" [src]="link" *ngIf="link; else linkElseImg" alt="reddit" />
+<ng-template #linkElseImg>
+  <img class="img-component" [src]="linkIf" alt="user Avatar" />
+</ng-template>
